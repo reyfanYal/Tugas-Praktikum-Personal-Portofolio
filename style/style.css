@@ -1,0 +1,299 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+:root{
+    --dark-spruce: #364B36ff; 
+    --orange: #FAAD1Aff;
+
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* Navbar */
+.Container-Navbar {
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 20px;
+    height: 7vh;
+    background-color: black;
+    color: white;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-spruce);
+}
+
+.Navigation ul {
+    display: flex;
+    gap: 20px;
+}
+
+.Navigation li {
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.Navigation a:hover{
+    color: var(--orange);
+    
+}
+.Navigation a {
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    color: white;
+}
+/* Navbar END */
+
+
+/* Body */
+.Hero-Section {
+    display: flex;
+    margin-top: 10px;
+
+}
+
+.Hero-Left{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.Hero-Left h2{
+    font-size: 40px;
+}
+
+.Hero-Right {
+    display: flex;
+    justify-content: right;
+    margin: 0 auto;
+}
+.Hero-Right img {
+    width: 300px;
+
+}
+.Nama{
+    color: var(--orange);
+    text-decoration: underline;
+    font-style: italic;
+    
+}
+
+.Sosial-Media {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.Instagram {
+    background-color: var(--orange);
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+
+.Instagram a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+.Instagram a:hover {
+    color: var(--dark-spruce);
+}
+.Contact-Me {
+  background-color: var(--orange);
+  border-radius: 20px;
+  padding: 5px 10px;  
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.Contact-Me a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+.Contact-Me a:hover {
+    color: var(--dark-spruce);
+}
+
+.H2-About h2{
+    display: flex;
+    text-align: center;
+}
+
+.About-Me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+   
+}
+.About-Me h2{
+    color: var(--orange);
+    font-size: 30px;
+}
+.About-Explain{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.About-Left {
+    width: 50%;
+    margin: 20px;
+    background-color: var(--dark-spruce);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+
+.About-Left p {
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+}
+
+.About-Right {
+    width: 50%;
+    margin: 20px;
+    background-color: var(--dark-spruce);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.About-Right ol {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.About-Right li {
+    font-size: 20px;
+    color: white;
+}
+/* Body END */
+
+/* Footer */
+.Container-Footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    color: rgb(70, 65, 65);
+    margin-bottom: 5px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Footer END */
+
+
+
+/* CONTACT ME */
+.K-Container {
+    width: 95%;
+    background-color:#364B36ff;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px dashed black;
+    border-radius: 10px;
+    height: 80vh;
+}
+
+.Heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: none;
+}
+.Heading h1 {
+    color: var(--orange);
+    text-decoration: underline;
+    margin-top: 10px;
+
+}
+.Heading p {
+    color: white;
+    margin-top: 5px;
+    
+}
+
+.Contact-Box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 20px;
+    margin-top: 50px;
+    max-width: 100%;
+    height: 50vh;
+}
+.Email-Box{
+    background-color: var(--orange);
+    width: 35%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    transition: all 0.3s ease;
+    
+}
+
+.Email-Box:hover{
+    background-color: var(--orange);
+    box-shadow: 6px 6px 0px #ffffff; 
+    transform: translate(-4px, -4px);
+}
+
+.Email-Box img {
+    width:20%;
+}
+
+.Wa-Box {
+    background-color: var(--orange);
+    width: 35%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    transition: all 0.3s ease;
+}
+.Wa-Box img{
+    width: 20%;
+}
+.Wa-Box:hover{
+    background-color: var(--orange);
+    box-shadow: 6px 6px 0px #ffffff;
+    transform: translate(-4px,-4px);
+}
+/* CONTACT ME END*/
