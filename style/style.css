@@ -43,6 +43,7 @@ body{
 .Navigation li {
     text-decoration: none;
     list-style: none;
+    font-weight: bold;
 
 }
 
@@ -85,7 +86,7 @@ body{
     margin-right: 0;
 }
 .Hero-Right img {
-    width: 350px;
+    width: 500px;
 
 }
 .Nama{
@@ -224,7 +225,7 @@ body{
     gap: 20px;
     align-items: center;
     border: 2px dashed #364B36ff;
-    height: 45vh;
+    height: 35vh;
     border-radius: 20px;
     transition: all 0.3s ease;
 }
@@ -251,7 +252,7 @@ body{
     gap: 20px;
     align-items: center;
     border: 2px dashed #364B36ff;
-    height: 45vh;
+     height: 35vh;
     border-radius: 20px;
     transition: all 0.3s ease;
 }
@@ -277,7 +278,7 @@ body{
     gap: 20px;
     align-items: center;
     border: 2px dashed #364B36ff;
-    height: 45vh;
+    height: 35vh;
     border-radius: 20px;
     transition: all 0.3s ease;
 }
