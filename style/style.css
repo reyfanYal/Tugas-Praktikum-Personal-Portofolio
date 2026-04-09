@@ -82,9 +82,10 @@ body{
     display: flex;
     justify-content: right;
     margin: 0 auto;
+    margin-right: 0;
 }
 .Hero-Right img {
-    width: 300px;
+    width: 350px;
 
 }
 .Nama{
@@ -151,6 +152,7 @@ body{
 .About-Me h2{
     color: var(--orange);
     font-size: 30px;
+    text-shadow: 4px 4px 7px -4px #364B36ff;
 }
 .About-Explain{
     margin-top: 10px;
@@ -191,6 +193,110 @@ body{
     font-size: 20px;
     color: white;
 }
+
+.Activity{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 100%;
+    height: 60vh;
+    margin-top: 10px;
+}
+.Activity h2 {
+    color: #FAAD1Aff;
+    margin-bottom: 20px;
+    text-shadow: 4px 4px 7px -4px #364B36ff;
+
+}
+
+.Acivity-Box{
+    margin-top: 10px;
+    display: flex;
+    gap: 70px;
+    height: 50vh;
+}
+
+
+.Activity-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    border: 2px dashed #364B36ff;
+    height: 45vh;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.Activity-1 img {
+    width: 90%;
+}
+.Activity-1 a {
+    font-weight:bold;
+    color: var(--dark-spruce);
+    text-decoration: none;
+}
+
+.Activity-1:hover {
+    box-shadow: 6px 6px 0px #364B36ff;
+    transform: translate(-4px,-4px);
+    color: white;
+    border: 1px dashed #364B36ff;
+}
+
+.Activity-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    border: 2px dashed #364B36ff;
+    height: 45vh;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+.Activity-2 img {
+    width: 90%;
+}
+.Activity-2 a {
+    font-weight:bold;
+    color: var(--dark-spruce);
+    text-decoration: none;
+}
+
+.Activity-2:hover {
+    box-shadow: 6px 6px 0px #364B36ff;
+    transform: translate(-4px,-4px);
+    color: white;
+    border: 1px dashed #364B36ff;
+}
+
+.Activity-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    border: 2px dashed #364B36ff;
+    height: 45vh;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.Activity-3 img {
+    width: 90%;
+}
+.Activity-3 a {
+    font-weight:bold;
+    color: var(--dark-spruce);
+    text-decoration: none;
+}
+.Activity-3:hover {
+    box-shadow: 6px 6px 0px #364B36ff;
+    transform: translate(-4px,-4px);
+    color: white;
+    border: 1px dashed #364B36ff;
+}
+
 /* Body END */
 
 /* Footer */
@@ -202,7 +308,7 @@ body{
     color: rgb(70, 65, 65);
     margin-bottom: 5px;
     font-size: 12px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 /* Footer END */
@@ -250,6 +356,7 @@ body{
 }
 .Email-Box{
     background-color: var(--orange);
+    
     width: 35%;
     height: 100%;
     border-radius: 20px;
