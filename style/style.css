@@ -408,6 +408,9 @@ body{
 /* CONTACT ME END*/
 
 
+
+
+
 /* form html */
 
 /* CONTAINER */
@@ -459,6 +462,7 @@ button {
     cursor: pointer;
     font-weight: 600;
     transition: 0.3s;
+    color: white;
 }
 
 button:hover {
@@ -501,6 +505,7 @@ tr:nth-child(even) {
     background: #c0392b;
     transform: scale(1.05);
 }
+
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
