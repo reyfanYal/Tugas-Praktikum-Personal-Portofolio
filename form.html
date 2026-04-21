@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Dashboard</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- CSS -->
+     
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+    <!-- Navbar  -->
+    <nav class="Container-Navbar">
+        <div class="Navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="./kontak.html">Contact</a></li>
+                <li><a href="./form.html">Registration</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+
+        <!-- FORM SECTION -->
+        <section class="form-section">
+            <h2>Registration Form</h2>
+
+            <form id="registrationForm">
+                <label>Full Name</label>
+                <input type="text" id="name" placeholder="Full Name" required>
+
+                <label>Email</label>
+                <input type="email" id="email" placeholder="Email" required>
+
+                <label>Age</label>
+                <input type="number" id="age" placeholder="Age" required>
+
+                <label>Date Of Birth</label>
+                <input type="date" id="date" required>
+
+                <!-- RADIO -->
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <label><input type="radio" name="gender" value="Male" required> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                </div>
+
+                <!-- SELECT -->
+                <label>Role</label>
+                <select id="role" required>
+                    <option value="">Select Role</option>
+                    <option>Student</option>
+                    <option>Developer</option>
+                    <option>Designer</option>
+                </select>
+
+                <!-- CHECKBOX -->
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="agree" required>
+                        Agree to Terms
+                    </label>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- TABLE SECTION -->
+        <section class="table-section">
+            <h2>Dashboard</h2>
+
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Age</th>
+                        <th>Date</th>
+                        <th>Gender</th>
+                        <th>Role</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will appear here -->
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+
+     <!-- footer -->
+    <footer class="Container-Footer">
+        © 2026 Reyfan All rights reserved.
+    </footer>
+    <!-- footer End-->
+
+    <!-- JS -->
+    <script src="./script/script.js"></script>
+
+</body>
+</html>
