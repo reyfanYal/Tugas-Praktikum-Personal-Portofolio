@@ -485,6 +485,7 @@ th, td {
 th {
     background: var(--dark-spruce);
     color: white;
+
 }
 
 tr:nth-child(even) {
