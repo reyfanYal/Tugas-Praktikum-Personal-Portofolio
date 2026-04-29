@@ -299,6 +299,50 @@ body{
     border: 1px dashed #364B36ff;
 }
 
+/* SOSIAL MEDIA */
+.sosial-media{
+    margin-bottom: 20px;
+}
+
+.sosial-media h2{
+    color: var(--orange);
+    text-align: center;
+}
+.sosial-media p{
+    margin-top: 20px;
+    text-align: center;
+    color: var(--orange);
+    text-shadow: 0px 4px 15px 0px #000000;
+    font-size: 20px;
+}
+.sosmed-box{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+#sosmed-box-action{
+    background-color: var(--dark-spruce);
+    padding: 20px;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+#sosmed-box-action:hover{
+    transform: translate(-3px,-3px);
+}
+#sosmed-box-action a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+    text-align: center;
+}
+
+#sosmed-box-action a:hover{
+    color: var(--orange);
+    transform: translate(-3px,-3px);
+}
+/* SOSIAL MEDIA END */
 /* Body END */
 
 /* Footer */
