@@ -1,261 +1,337 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
-body{
-    background-color: #ffffff;
-}
-
-:root{
+:root {
     --dark-spruce: #364B36ff; 
     --orange: #FAAD1Aff;
-
 }
 
-body{
+body {
+    background-color: #ffffff;
     font-family: "Montserrat", sans-serif;
 }
 
+/* =========================================
+   1. BASE STYLES (MOBILE / LAYAR KECIL)
+   ========================================= */
+
 /* NAVBAR */
-.Container-Navbar{
+.Container-Navbar {
     background-color: var(--dark-spruce);
     display: flex;
-    height: 10vh;
-    margin-top: 10px;
-    border-radius: 50px;
-    margin: 20px;
+    flex-direction: column; /* Ditumpuk ke bawah di HP */
+    padding: 15px 0;
+    border-radius: 20px;
+    margin: 15px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 15px;
 }
 
-/* LOGO */
-.logo{
+.logo {
     display: flex;
     align-items: center;
-  
 }
-.logo p{
+
+.logo p {
     color: white;
     font-weight: bold;
-    margin-left: none;
-}
-.logo img{
-    width: 100px;
-    margin-left: 20px;
-    padding: 35px;
+    margin-left: 10px;
 }
 
-/* NAVIGATION */
-.Navigation {
-    margin-right: 40px;
+.logo img {
+    width: 30px; /* Diperkecil untuk HP */
 }
-.Navigation ul{
+
+.Navigation ul {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
     list-style: none;
+    padding: 0 10px;
 }
 
-.Navigation ul a{
+.Navigation ul a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    font-size: 14px;
 }
-.Navigation ul a:hover{
+
+.Navigation ul a:hover {
     color: var(--orange);
 }
-/* NAVBAR END */
 
-/* MAIN */
-.Container{
+/* MAIN CONTAINER */
+.Container {
     margin: 20px;
 }
 
-
-/* landing page */
-#LandingPage{
-    margin-top: 50px;
+/* LANDING PAGE */
+#LandingPage {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Teks ke tengah di HP */
 }
 
-#LandingPage span{
-    color:var(--orange);
+#LandingPage span {
+    color: var(--orange);
     text-decoration: underline;
     font-style: italic;
 }
 
-.landingPage-1{
+.landingPage-1 {
     display: flex;
+    flex-direction: column-reverse; /* Gambar di atas, teks di bawah di HP */
     align-items: center;
-    justify-content: space-between;
-}
-
-.landingPage-Left{
-      
-}
-.landingPage-Left h1{
-    font-size: 60px;
-    transform: translateY(-40px);
-    
-}
-.landingPage-Left h3{
-    margin-bottom: 10px;
-    transform: translateY(-40px);
-    margin-left: 10px;
-}
-
-.landingPage-Right{
-    margin-right: 20px;
-}
-
-.landingPage-Right img{
-    width: 300px;
-    padding: 20px;
-}
-
-.LP-P{
-    max-width: 70%;
-    transform: translateY(-180px);
-    text-align: justify;
-}
-.landingPage-Btn{
-    transform: translateY(-140px);
-    display: flex;
     gap: 20px;
 }
 
-.landingPage-Btn a{
+.landingPage-Left h1 {
+    font-size: 40px; /* Ukuran font disesuaikan untuk HP */
+}
+
+.landingPage-Left h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.landingPage-Right img {
+    width: 80%;
+    max-width: 250px;
+}
+
+.LP-P {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.landingPage-Btn {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.landingPage-Btn a {
     text-decoration: none;
     background-color: var(--dark-spruce);
     color: white;
-    padding: 20px;
+    padding: 15px 25px;
     border-radius: 30px;
     font-weight: bold;
 }
 
-.landingPage-Btn a:hover{
+.landingPage-Btn a:hover {
     color: var(--orange);
 }
 
-/* LANDING PAGHE END */
-
-/* Program */
-#Program h2{
+/* PROGRAMS */
+#Program h2 {
     text-align: center;
-    margin-bottom: 20px;
-    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 28px;
     color: var(--dark-spruce);
 }
-.Program{
+
+.Program {
     display: flex;
+    flex-direction: column; /* Ditumpuk di HP */
     gap: 20px;
     align-items: center;
-    justify-content: center;
 }
 
-.program-card{
+.program-card, .program-card-1 {
     text-align: center;
-    width: 250px;
-    height: 300px;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    padding: 30px 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5px;
-    gap: 5px;
+    gap: 15px;
     color: var(--dark-spruce);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     border: 1px dashed var(--dark-spruce);
     border-radius: 20px;
-}
-
-.program-card:hover{
-    transform: translate(-3px, -3px);
-     box-shadow: 6px 6px 0px #364B36ff;
+    transition: 0.3s;
 }
 
 .program-card-1{
-    text-align: center;
-    width: 250px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    gap: 5px;
-    color: var(--dark-spruce);
-    font-weight: bold;
-    font-size: 20px;
-    border: 1px dashed var(--dark-spruce);
-    border-radius: 20px;
-}
-.program-card-1:hover{
-    transform: translate(-3px, -3px);
-     box-shadow: 6px 6px 0px #364B36ff;
-}
-.program-card-1 img{
-    width: 90%;
+    height: 370px;
+
 }
 
 .program-card-1 p{
     transform: translateY(70px);
 }
-.program-card img{
-    width: 60%;
-   
+
+.program-card:hover, .program-card-1:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 6px 6px 0px #364B36ff;
 }
-/* Program END */
+
+.program-card img {
+    width: 60%;
+}
+.program-card-1 img{
+    width: 100%;
+}
 
 /* TIM */
-#Tim{
+#Tim {
+    margin-top: 60px;
+}
+
+#Tim h2 {
+    color: var(--dark-spruce);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.tim-container {
+    display: flex;
+    flex-direction: column; /* Ditumpuk di HP */
+    align-items: center;
+    gap: 30px;
+}
+
+
+.tim-tim {
+    width: 100%;
+    max-width: 320px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    border: 1px solid #eee;
+    transition: 0.3s;
+}
+.tim-tim:hover{
+    transform: translateY(-15px);
+}
+
+.tim-tim:hover{
+    transform: translateY();
+}
+
+.tim-header {
+    background-color: var(--dark-spruce);
+    height: 100px; /* Tinggi pasti agar aman */
+}
+
+.tim-body {
+    position: relative;
+    margin-top: -50px; 
+    padding-bottom: 20px;
+    margin-left: 10px;
+}
+
+.tim-body img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: var(--dark-spruce);
+    border: 4px solid white;
+    margin-bottom: 10px;
+    object-position: top;
+    
+}
+
+.tim-body h4 {
+    color: var(--orange);
+    margin-bottom: 5px;
+}
+
+.tim-body p {
+    color: var(--dark-spruce);
+    font-weight: bold;
+}
+
+/* FOOTER */
+.Container-Footer {
+    text-align: center;
+    color: rgb(70, 65, 65);
+    font-size: 12px;
+    padding: 20px;
     margin-top: 40px;
 }
 
-#Tim h2{
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 30px;
-    color: var(--dark-spruce);
+
+/* =========================================
+   2. TABLET STYLES
+   ========================================= */
+@media (min-width: 768px) {
+    .Program {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .tim-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
-.tim-container{
-    display: flex;
-    margin: 0%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 20px;
-    margin-top: 20px;
+/* =========================================
+   3. DESKTOP STYLES (KEMBALI KE DESAIN ASLIMU)
+   ========================================= */
+@media (min-width: 1024px) {
+    /* Navbar kembali memanjang */
+    .Container-Navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        height: 10vh;
+        border-radius: 50px;
+        margin: 20px;
+    }
+    
+    .logo img { width: 80px; padding: 20px; }
+    .Navigation { margin-right: 40px; }
+    
+    /* Landing Page kembali kiri-kanan */
+    #LandingPage {
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    .landingPage-1 {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .landingPage-Left h1 { font-size: 60px; }
+    .landingPage-Left h3 { font-size: 24px; }
+    .landingPage-Right img { width: 300px; max-width: none; }
+    
+    .LP-P {
+        max-width: 60%;
+        text-align: justify;
+    }
+    
+    .landingPage-Btn {
+        justify-content: flex-start;
+    }
 }
-
-
-.tim-card{
-    border: 1px dashed var(--dark-spruce);
-    width: 400px;
-    border-radius: 30px;
-
-}
-
-.tim-card img{
-    width: 40%;
-   
-}
-/* TIM END */
-/* MAIN END */
-
-/* Footer */
-.Container-Footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    color: rgb(70, 65, 65);
-    margin-bottom: 5px;
-    font-size: 12px;
-    margin-top: 10px;
-}
-
-/* Footer END */
