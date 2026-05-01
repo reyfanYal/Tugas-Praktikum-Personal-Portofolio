@@ -40,7 +40,8 @@ body {
 .logo p {
     color: white;
     font-weight: bold;
-    margin-left: 10px;
+    margin-left: 5px;
+    
 }
 
 .logo img {
@@ -60,7 +61,7 @@ body {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .Navigation ul a:hover {
@@ -307,8 +308,10 @@ body {
         margin: 20px;
     }
     
+    
     .logo img { width: 80px; padding: 20px; }
     .Navigation { margin-right: 40px; }
+
     
     /* Landing Page kembali kiri-kanan */
     #LandingPage {
@@ -334,4 +337,170 @@ body {
     .landingPage-Btn {
         justify-content: flex-start;
     }
+}
+
+
+.modal{
+    display: none;
+    position: fixed; /* 🔥 ini kunci */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* backdrop */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    display: flex;
+}
+.modal h2{
+    text-align: center;
+    margin-top: 20px;
+    color: var(--dark-spruce);
+    font-size: 24px;
+}
+
+.modal p{
+    text-align: center;
+    color: var(--dark-spruce);
+    font-size: 14px;
+}
+
+.modal-content{
+    background-color: white;
+    border-radius: 30px;
+    margin: 20px;
+    padding: 30px;
+    box-shadow: 1px 10px 25px 10px rgba(0,0,0,0.1);
+
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto; 
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+    
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.close-btn{
+    background-color: var(--dark-spruce);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 40px;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 5px;
+    width: 100px;
+    border-radius: 40px;
+    text-align: center;
+    color: white;
+}
+
+#registrationGenre{
+    margin: 20px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#registrationGenre input{
+    border-radius: 20px;
+    height: 50px;
+    padding: 10px;
+    color: var(--dark-spruce);
+}
+
+#registrationGenre  textarea{
+    border-radius: 20px;
+    height: 50px;
+    padding: 20px;
+    color: var(--dark-spruce);
+    font-family: 'Courier New', Courier, monospace;
+}
+#registrationGenre label{
+    color: var(--dark-spruce);
+}
+
+.Grup-JK{
+    display: flex;  
+    align-items: center;
+    gap: 15px;
+}
+
+.Grup-JK input{
+    height: auto;     
+    width: auto;
+    margin-right: 5px;
+    padding: 0;
+}
+
+#Status{
+    border-radius: 20px;
+    height: 50px;
+    padding: 10px;
+    color: var(--dark-spruce);
+}
+
+.modal-content button{
+    background-color: var(--dark-spruce);
+    border: none;
+    padding: 15px;
+    width: 20%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 20px;
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+    cursor: pointer;
+    margin-top: -10px;
+}
+
+.tabel{
+    margin: 20px;
+}
+
+.tabel h2{
+    text-align: center;
+    color: var(--dark-spruce);
+
+}
+
+#DataTabel{
+    background-color: #364B36ff;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    color: white;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+
+th {
+    padding: 20px;
+
+}
+td{
+    padding: 20px;
+    text-align: left;
+    background-color: none;
+}
+
+.delete-btn{
+    background-color: red;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font: 14px;
+    color: white;
 }
